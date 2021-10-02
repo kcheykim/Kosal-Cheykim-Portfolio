@@ -10,6 +10,7 @@ body {
     flex-wrap: wrap;
 }
 
+/* style for the header starts */
 header {
     background-color: blue;
     padding: 20px 35px;
@@ -55,7 +56,10 @@ header nav ul li a {
     font-weight: lighter;
     font-size: 1.55vw;
 }
+/* end for the header styles */
 
+
+/* styles for the hero image/section of the page */
 .hero {
     background-image: url(../images/field.jpg);
     background-size: cover;
@@ -94,10 +98,14 @@ header nav ul li a {
     display: flex;
     justify-content: right;
 }
+/* end of the hero section of the page */
 
+
+/* styles for the content of the page - using flexbox */
 .title {
     display: flex;
 }
+
 .section-title {
     font-size: 36px;
     color: green;
@@ -106,7 +114,6 @@ header nav ul li a {
     margin: 0 auto 35px auto; 
     width: 250px;
 }
-
 
 #about-me, #work, #contact-me, #resume {
     display: flex;
@@ -127,6 +134,7 @@ header nav ul li a {
     border-left: 3px solid red;
     padding: 50px;
 }
+
 .photo{
     display: inline-block;
 }
@@ -144,7 +152,10 @@ header nav ul li a {
   .flex-row {
     display: flex;
 }
+/* end the content styles of the page */
 
+
+/* pseduo portion to make the first application bigger */
 .launchApp{
     transform: transform .3s;
 }
@@ -152,7 +163,10 @@ header nav ul li a {
 .launchApp:hover {
     transform: scale(2);
 }
+/* end pseduo code portion */
 
+
+/* start styles for the footer */
 footer {
     background: green;
     width: 100%;
@@ -162,23 +176,20 @@ footer {
     flex-wrap: wrap;
 }
 
-/* apply style to the left <h2> of the footer */
 footer h4 {
     color: white;
     font-size: 30px;
     margin: 0;
 }
 
-/* apply style to the right <div> of the footer */
 footer div {
     line-height: 1.5;
     text-align: right;
 }
+/* end styles for the footer */
 
 
-
-
-/* Media Query */
+/* Media Query starts */
 @media screen and (max-width: 980px) {
     header {
         padding-bottom: 0;
@@ -221,14 +232,28 @@ footer div {
     section {
         padding: 30px 15px;
         text-align: center;
-        flex: 1 100%;
+        justify-content: center;
+        /*flex: 1 100%;*/
+    }
+    
+    .section-title {
+        flex: 2 100%;
     }
 
     .picture {
         flex: 1;
     }
+    
+    #about-me p,
+    #contact-me p,
+    #resume p {
+    border-top: 3px solid red;
+    border-left: none;
+}
 
-    .card {
+.photo-display {
+        border-top: 3px solid red;
+        border-left: none;
         flex: 0 0 32%;
         margin-right: 0;
         margin-top: 15px;
@@ -240,17 +265,12 @@ footer div {
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
 
-    .about-me h3,
-    .work h3,
-    .contact-me h3,
-    .resume h3 {
+    section {
         width: 100%;
-        align-items: center;
+        text-align: center;
     }
-    .about-me p,
-    .work p,
-    .contact-me p,
-    .resume p {
+
+    section p {
         width: 100%;
         align-items: center;
     }
