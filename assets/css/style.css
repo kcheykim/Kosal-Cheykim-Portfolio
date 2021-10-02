@@ -20,7 +20,7 @@ header {
     position: sticky;
     position: -webkit-sticky;
     top: 0;
-    background-image: url(../images/field.jpg);
+    background-image: url("../images/field.JPG");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
