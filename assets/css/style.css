@@ -61,7 +61,7 @@ header nav ul li a {
 
 /* styles for the hero image/section of the page */
 .hero {
-    background-image: url(../images/field.jpg);
+    background-image: url("../images/field.JPG");
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -221,9 +221,11 @@ footer div {
         text-align: center;
         width: 100%;
     }
-    
-    .section-title {
-        width: 80%;
+
+    .section-title h3 {
+       width: 100%;
+       justify-content: stretch;
+
     }
 }
   
@@ -231,15 +233,14 @@ footer div {
 @media screen and (max-width: 768px) {
     section {
         padding: 30px 15px;
-        text-align: center;
-        justify-content: center;
-        /*flex: 1 100%;*/
+        flex: 1 100%;
     }
     
     .section-title {
         flex: 2 100%;
     }
 
+    
     .picture {
         flex: 1;
     }
