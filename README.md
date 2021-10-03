@@ -1,6 +1,6 @@
 # Kosal Cheykim Portfolio
 
-The purpose of this project is to showcase the skills and talents of my professional portfolio as a developer including my name, a recent photo of myself, links to my work or skills, and a way to contact me. The links on this page will correspond to and navigation of the location on the page. Under the work or skill options, the images of application will appar larger in size, and the layout will adapt to the viewport of different devices. This project will allow employers who are seeking employees in my field of expertise to be able to view my accomplished work and the process behind them.
+The purpose of this challenge is to showcase my portfolio as a full stack developer. This portfolio will have my name, an avatar of myself (will update with a photo later), a showcase of my work so far, and a way to contact me. The first application will became larger when the cursor hover over it and it will launch my the first project, my portfolio page. Along with the first application, there are images that will link to module projects, future challenge, and previous challenge. The page will follow the readability and accessibility protocol using html and css semantic standards. The website can be view across mobile devices as well and standard computer screen.
 
 ## Built With
 
@@ -8,8 +8,14 @@ The purpose of this project is to showcase the skills and talents of my professi
 * Advanced CSS styles
 
 ## HTML
-* All employer to sample potential employee previous work in a professional layout including use of good semantic HTML tags, structure, and attributes. This page will be made readabilties and accessibilities. The HTML layout will adapt the different user's viewport depending of the device use.
+* A website that showcase my portfolio as an upcoming full stack develope using good semantic HTML tags, structure, and attributes. This page will follow the readabilties and accessibilities standarads. The HTML layout will adapt to different user's viewport depending of the device use.
 
 ## Advanced CSS Styles
 
 * Showcasing flexbox, media queries, and advanced CSS styles
+
+## Website
+
+
+## Image of Website
+![Kosal-Cheykim-Portfolio](./assets/images/KC_portfolio.png?raw=true)

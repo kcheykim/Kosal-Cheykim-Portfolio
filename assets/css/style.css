@@ -151,9 +151,10 @@ header nav ul li a {
 }
 
 .photo img{
-    padding: 20px;
     width: 300px;
     height: 225px;
+    border: 8px solid var(--slate);
+    border-radius: 15px;
 }
 
   .photo-display h4 {
