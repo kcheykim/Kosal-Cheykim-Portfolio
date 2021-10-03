@@ -1,18 +1,29 @@
+/*declaring CSS variables at root for repeated us*/
+:root {
+    --avacado: #A1C935;
+    --leaf: #89C35C;
+    --slate: #848B79;
+    --gold: #FFDB58;
+    --black: #000000;
+    --pumpkin: #FF4500;
+}
+
 *{
     box-sizing: border-box;
+
 }
 
 body {
     font-family: Helvetica, Arial, Helvetica, sans-serif;
-    background-color: black;
-    color: yellow;
+    background-color: var(--leaf);
+    color: var(--black);
     display: flex;
     flex-wrap: wrap;
 }
 
 /* style for the header starts */
 header {
-    background-color: blue;
+    background-color: var(--leaf);
     padding: 20px 35px;
     display: flex;
     flex-wrap: wrap;
@@ -30,13 +41,13 @@ header {
 header h1 {
     font-weight: bold;
     font-size: 36px;
-    color: red;
+    color: var(--black);
     margin: 0;
 }
 
 header a {
     text-decoration: none;
-    color: red;
+    color: var(--black);
 }
 
 header nav {
@@ -53,7 +64,7 @@ header nav ul {
 
 header nav ul li a {
     margin: 10px 15px;
-    font-weight: lighter;
+    font-weight: bold;
     font-size: 1.55vw;
 }
 /* end for the header styles */
@@ -74,7 +85,7 @@ header nav ul li a {
 .hero-cta {
     line-height: 1.2;
     width: 45%;
-    color: yellow;
+    color: var(--pumpkin);
     margin: 3.5%;
     font-size: 18px;
 }
@@ -86,7 +97,7 @@ header nav ul li a {
 }
 
 .hero-cta h3 {
-    font-size: 15px;
+    font-size: 18px;
     font-style: italic;
     align-items: left;
 }
@@ -108,7 +119,7 @@ header nav ul li a {
 
 .section-title {
     font-size: 36px;
-    color: green;
+    color: var(--slate);
     padding-bottom: 20px;
     text-align: center;
     margin: 0 auto 35px auto; 
@@ -123,15 +134,15 @@ header nav ul li a {
 #contact-me p,
 #resume p {
     line-height: 2;
-    color: yellow;
+    color: var(--gold);
     font-size: 18px;
     text-align: left;
     padding: 50px;
-    border-left: 3px solid red;
+    border-left: 3px solid var(--slate);
 }
 
 .photo-display {
-    border-left: 3px solid red;
+    border-left: 3px solid var(--slate);
     padding: 50px;
 }
 
@@ -143,13 +154,21 @@ header nav ul li a {
     padding: 20px;
     width: 300px;
     height: 225px;
-  }
+}
 
   .photo-display h4 {
       text-align: center;
+      color: var(--gold);
   }
 
-  .flex-row {
+.link {
+      text-decoration: none;
+      color: var(--gold)
+      font-size: 18px;
+      font-weight: bolder;
+}
+
+.flex-row {
     display: flex;
 }
 /* end the content styles of the page */
@@ -168,7 +187,7 @@ header nav ul li a {
 
 /* start styles for the footer */
 footer {
-    background: green;
+    background: var(--slate);
     width: 100%;
     padding: 40px 35px;
     display: flex;
@@ -177,7 +196,7 @@ footer {
 }
 
 footer h4 {
-    color: white;
+    color: var(--avacado);
     font-size: 30px;
     margin: 0;
 }
@@ -240,7 +259,6 @@ footer div {
         flex: 2 100%;
     }
 
-    
     .picture {
         flex: 1;
     }
@@ -248,12 +266,12 @@ footer div {
     #about-me p,
     #contact-me p,
     #resume p {
-    border-top: 3px solid red;
-    border-left: none;
-}
+    border-top: 3px solid var(--slate);
+    border-left: none;  
+    }
 
-.photo-display {
-        border-top: 3px solid red;
+    .photo-display {
+        border-top: 3px solid var(--slate);
         border-left: none;
         flex: 0 0 32%;
         margin-right: 0;
