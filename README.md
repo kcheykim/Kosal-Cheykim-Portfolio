@@ -15,7 +15,7 @@ The purpose of this challenge is to showcase my portfolio as a full stack develo
 * Showcasing flexbox, media queries, and advanced CSS styles
 
 ## Website
-
+https://kcheykim.github.io/Kosal-Cheykim-Portfolio/
 
 ## Image of Website
 ![Kosal-Cheykim-Portfolio](./assets/images/KC_portfolio.png?raw=true)
