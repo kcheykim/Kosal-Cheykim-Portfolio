@@ -1,4 +1,5 @@
 /*declaring CSS variables at root for repeated us*/
+
 :root {
     --avacado: #A1C935;
     --leaf: #89C35C;
@@ -8,9 +9,8 @@
     --pumpkin: #FF4500;
 }
 
-*{
+* {
     box-sizing: border-box;
-
 }
 
 body {
@@ -21,7 +21,9 @@ body {
     flex-wrap: wrap;
 }
 
+
 /* style for the header starts */
+
 header {
     background-color: var(--leaf);
     padding: 20px 35px;
@@ -67,10 +69,13 @@ header nav ul li a {
     font-weight: bold;
     font-size: 1.55vw;
 }
+
+
 /* end for the header styles */
 
 
 /* styles for the hero image/section of the page */
+
 .hero {
     background-image: url("../images/field.JPG");
     background-size: cover;
@@ -109,10 +114,13 @@ header nav ul li a {
     display: flex;
     justify-content: right;
 }
+
+
 /* end of the hero section of the page */
 
 
 /* styles for the content of the page - using flexbox */
+
 .title {
     display: flex;
 }
@@ -122,11 +130,14 @@ header nav ul li a {
     color: var(--slate);
     padding-bottom: 20px;
     text-align: center;
-    margin: 0 auto 35px auto; 
+    margin: 0 auto 35px auto;
     width: 250px;
 }
 
-#about-me, #work, #contact-me, #resume {
+#about-me,
+#work,
+#contact-me,
+#resume {
     display: flex;
 }
 
@@ -146,47 +157,53 @@ header nav ul li a {
     padding: 50px;
 }
 
-.photo{
+.photo {
     display: inline-block;
 }
 
-.photo img{
+.photo img {
     width: 300px;
     height: 225px;
     border: 8px solid var(--slate);
     border-radius: 15px;
 }
 
-  .photo-display h4 {
-      text-align: center;
-      color: var(--gold);
-  }
+.photo-display h4 {
+    text-align: center;
+    color: var(--gold);
+}
 
 .link {
-      text-decoration: none;
-      color: var(--gold)
-      font-size: 18px;
-      font-weight: bolder;
+    text-decoration: none;
+    color: var(--gold);
+    font-size: 18px;
+    font-weight: bolder;
 }
 
 .flex-row {
     display: flex;
 }
+
+
 /* end the content styles of the page */
 
 
 /* pseduo portion to make the first application bigger */
-.launchApp{
+
+.launchApp {
     transform: transform .3s;
 }
 
 .launchApp:hover {
     transform: scale(2);
 }
+
+
 /* end pseduo code portion */
 
 
 /* start styles for the footer */
+
 footer {
     background: var(--slate);
     width: 100%;
@@ -206,71 +223,66 @@ footer div {
     line-height: 1.5;
     text-align: right;
 }
+
+
 /* end styles for the footer */
 
 
 /* Media Query starts */
+
 @media screen and (max-width: 980px) {
     header {
         padding-bottom: 0;
         justify-content: center;
         position: relative;
-    }  
-    
+    }
     header h1 {
         width: 100%;
         text-align: center;
     }
-
     header nav ul {
         margin-top: 20px;
         width: 100%;
         justify-content: center;
     }
-
     header nav ul li a {
         font-size: 20px;
     }
-
-    footer h4, footer div {
+    footer h4,
+    footer div {
         text-align: center;
         width: 100%;
     }
-
     .hero-cta {
         text-align: center;
         width: 100%;
     }
-
     .section-title h3 {
-       width: 100%;
-       justify-content: stretch;
-
+        width: 100%;
+        justify-content: stretch;
     }
 }
-  
+
+
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
+
 @media screen and (max-width: 768px) {
     section {
         padding: 30px 15px;
         flex: 1 100%;
     }
-    
     .section-title {
         flex: 2 100%;
     }
-
     .picture {
         flex: 1;
     }
-    
     #about-me p,
     #contact-me p,
     #resume p {
-    border-top: 3px solid var(--slate);
-    border-left: none;  
+        border-top: 3px solid var(--slate);
+        border-left: none;
     }
-
     .photo-display {
         border-top: 3px solid var(--slate);
         border-left: none;
@@ -278,21 +290,19 @@ footer div {
         margin-right: 0;
         margin-top: 15px;
         margin-bottom: 15px;
-    } 
-
+    }
 }
-  
-/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
-@media screen and (max-width: 575px) {
 
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+
+@media screen and (max-width: 575px) {
     section {
         width: 100%;
         text-align: center;
     }
-
     section p {
         width: 100%;
         align-items: center;
     }
-
 }
