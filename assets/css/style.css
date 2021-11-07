@@ -4,7 +4,6 @@
     --avacado: #A1C935;
     --leaf: #89C35C;
     --slate: #848B79;
-    --gold: #FFDB58;
     --black: #000000;
     --pumpkin: #FF4500;
 }
@@ -127,7 +126,7 @@ header nav ul li a {
 
 .section-title {
     font-size: 36px;
-    color: var(--slate);
+    color: var(--black);
     padding-bottom: 20px;
     text-align: center;
     margin: 0 auto 35px auto;
@@ -145,7 +144,7 @@ header nav ul li a {
 #contact-me p,
 #resume p {
     line-height: 2;
-    color: var(--gold);
+    color: var(--black);
     font-size: 18px;
     text-align: left;
     padding: 50px;
@@ -170,7 +169,7 @@ header nav ul li a {
 
 .photo-display h4 {
     text-align: center;
-    color: var(--gold);
+    color: var(--black);
 }
 
 .link {
