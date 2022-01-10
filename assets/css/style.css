@@ -106,7 +106,7 @@ header nav ul li a {
     align-items: left;
 }
 
-.picture img {
+#picture_me img {
     text-align: right;
     width: 50%;
     flex-wrap: wrap;
